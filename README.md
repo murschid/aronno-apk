@@ -1,8 +1,8 @@
-# Aronno Keyboard - v1.0.2
+# Aronno Keyboard - v1.0.3
 
 **Release Date:** December 22, 2025
 
-## 🚀 What's New in v1.0.2?
+## 🚀 What's New in v1.0.3?
 
 ### Visual Refresh
 *   **Standardized Icons**: All toolbar icons have been updated to **Material Symbols Outlined (Weight 300)** for a consistent, lightweight, and modern aesthetic.
@@ -17,4 +17,4 @@
 *   **ConstraintLayout Refactor**: Improved UI stability by migrating the toolbar structure to `ConstraintLayout`.
 
 ## 📥 Download
-[Download AronnoKeyboard_v1.0.2.apk](app/release/AronnoKeyboard_v1.0.2.apk)
+[Download AronnoKeyboard_v1.0.3.apk](app/release/AronnoKeyboard_v1.0.3.apk)
