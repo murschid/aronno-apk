@@ -1,10 +1,10 @@
-# Aronno Keyboard - v1.1.1
+# Aronno Keyboard - v1.1.2
 
 **Release Date:** December 25, 2025
 
-## 🚀 What's New in v1.1.1?
+## 🚀 What's New in v1.1.2?
 
-# Version 1.1.1 - Theme Fixes & Improvements
+# Version 1.1.2 - Theme Fixes & Improvements
 
 ## 🎨 Theme Improvements
 
@@ -32,4 +32,4 @@
 - Resolved `bg_aquamarine_gradient` resource reference error
 
 ## 📥 Download
-[Download AronnoKeyboard_v1.1.1.apk](app/release/AronnoKeyboard_v1.1.1.apk)
+[Download AronnoKeyboard_v1.1.2.apk](app/release/AronnoKeyboard_v1.1.2.apk)
