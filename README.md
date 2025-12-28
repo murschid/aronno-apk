@@ -1,35 +1,28 @@
-# Aronno Keyboard - v1.1.2
+# Aronno Keyboard - v1.1.3
 
-**Release Date:** December 25, 2025
+**Release Date:** December 28, 2025
 
-## 🚀 What's New in v1.1.2?
+## 🚀 What's New in v1.1.3?
 
-# Version 1.1.2 - Theme Fixes & Improvements
+# Version 1.1.3 - Visual Polish & Touch Improvements
 
-## 🎨 Theme Improvements
+## ✨ Visual Enhancements
+### Special Key Styling
+- Added **Hollow Circle Icons** for "Conjuncts" (ক্ষ) and "Back to Alpha" (অ) keys.
+- Characters are now perfectly centered inside the ring using precise vertical translation.
+- Replaced previous text-only style with a cleaner, Material Design vector appearance.
 
-### Fixed Ekushey Theme Background Scaling
-- Red circle now displays at correct size in keyboard view
-- Changed background scale type from `CENTER_CROP` to `FIT_XY` for proper aspect ratio
-- Circle size properly respects drawable dimensions (160dp)
+## 🚀 UX Improvements
+### Enhanced Touch Response
+- **Expanded Hitboxes**: Converted key margins to padding to eliminate "dead zones" between keys.
+- **Improved Reliability**: Disabled overlay click interception to ensure every tap is registered instantly.
 
-### Updated Theme Store Icons
-**Ekushey Theme Icon** - Now accurately represents the actual theme:
-- Background: `#0B3D2E` (softer green)
-- Keys: `#33FFFFFF` (semi-transparent white)
-- Control keys: `#88222222` (soft dark gray)
-- Red circle: `#F42A41` (matching Bangladesh flag)
-
-**Aquamarine Theme Icon** - Now matches actual keyboard colors:
-- Background: `#173150` (dark blue)
-- Keys: `#396978` (teal-blue)
-- Control keys: `#8FB0B4` (light gray-blue)
+### Popup Refinements
+- **Perfect Alignment**: Removed vertical offsets; popups now align flush with the key top.
+- **Horizontal Fix**: Corrected popup positioning to prevent overflow gaps and misalignment on the right edge.
 
 ## 🐛 Bug Fixes
-
-- Fixed Ekushey theme red circle appearing oversized in keyboard but correct in preview
-- Fixed theme store icons not matching actual keyboard appearance
-- Resolved `bg_aquamarine_gradient` resource reference error
+- Fixed bottom row clipping issue by disabling container clipping.
 
 ## 📥 Download
-[Download AronnoKeyboard_v1.1.2.apk](app/release/AronnoKeyboard_v1.1.2.apk)
+[Download AronnoKeyboard_v1.1.3.apk](app/release/AronnoKeyboard_v1.1.3.apk)
