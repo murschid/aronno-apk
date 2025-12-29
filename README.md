@@ -1,28 +1,33 @@
-# Aronno Keyboard - v1.1.3
+# Aronno Keyboard - v1.1.4
 
-**Release Date:** December 28, 2025
+**Release Date:** December 29, 2025
 
-## 🚀 What's New in v1.1.3?
+## 🚀 What's New in v1.1.4?
 
-# Version 1.1.3 - Visual Polish & Touch Improvements
+# Version 1.1.4 - UI Refinements & Code Optimization
 
 ## ✨ Visual Enhancements
-### Special Key Styling
-- Added **Hollow Circle Icons** for "Conjuncts" (ক্ষ) and "Back to Alpha" (অ) keys.
-- Characters are now perfectly centered inside the ring using precise vertical translation.
-- Replaced previous text-only style with a cleaner, Material Design vector appearance.
+### Toolbar Icon Sizing
+- **Larger Icons**: Reduced toolbar icon padding from 14dp to 12dp (top/bottom), making icons more prominent and easier to tap
+- **Better Visual Balance**: Icons now have ~24dp effective size vs. previous ~20dp
 
-## 🚀 UX Improvements
-### Enhanced Touch Response
-- **Expanded Hitboxes**: Converted key margins to padding to eliminate "dead zones" between keys.
-- **Improved Reliability**: Disabled overlay click interception to ensure every tap is registered instantly.
+### Emoji & Sticker Optimization
+- **Fixed Clipping**: Reduced emoji size from 44dp to 40dp and text from 28sp to 25sp to prevent bottom clipping
+- **Sticker Refinement**: Reduced sticker size from 70dp to 64dp and padding from 8dp to 6dp/4dp for better fit
+- **Maintained Minimal Padding**: Kept tight keyboard spacing while eliminating visual artifacts
 
-### Popup Refinements
-- **Perfect Alignment**: Removed vertical offsets; popups now align flush with the key top.
-- **Horizontal Fix**: Corrected popup positioning to prevent overflow gaps and misalignment on the right edge.
+## 🚀 Code Quality Improvements
+### Removed Resource Reflection
+- **DataSafetyActivity**: Replaced `getIdentifier()` with direct `com.google.android.material.R.id.design_bottom_sheet` reference
+- **Better Performance**: Eliminated runtime reflection overhead for improved efficiency
+- **Build Optimization**: Enabled ProGuard/R8 to optimize resources at compile-time
+
+### LocaleHelper Refactoring
+- **Cleaner Code**: Removed redundant `defaultLanguage` parameter by using constant `DEFAULT_LANGUAGE = "bn"`
+- **Type Safety**: Improved compile-time verification and reduced code duplication
 
 ## 🐛 Bug Fixes
-- Fixed bottom row clipping issue by disabling container clipping.
+- Fixed emoji and sticker bottom clipping in keyboard views
 
 ## 📥 Download
-[Download AronnoKeyboard_v1.1.3.apk](app/release/AronnoKeyboard_v1.1.3.apk)
+[Download AronnoKeyboard_v1.1.4.apk](app/release/AronnoKeyboard_v1.1.4.apk)
