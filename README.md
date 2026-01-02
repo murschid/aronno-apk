@@ -1,26 +1,29 @@
-# Aronno Keyboard - v1.1.5
+# Aronno Keyboard - v1.1.6
 
-**Release Date:** December 30, 2025
+**Release Date:** January 03, 2026
 
-## 🚀 What's New in v1.1.5?
+## 🚀 What's New in v1.1.6?
 
-# Version 1.1.5 - Smooth Spacebar Swipe & Polish
+# Version 1.1.6 - Phonetic Polish & Zero-XML
 
 ## ✨ New Features
-### **Smooth Spacebar Language Switcher**
-- **Carousel Interaction:** Swiping the spacebar now reveals a smooth 3-item carousel (Previous | Current | Next) that slides with your finger.
-- **Outside-In Animation:** Neighbors slide in from the edges for a polished "scrolling tape" effect.
-- **Instant Response:** Optimized for zero-lag appearance immediately upon touch.
-- **Smart Selection:** Clamped logic ensures the visual "Next" item is exactly what gets selected, preventing accidental skips.
+### **Visual Polish for Phonetic Input**
+- **Underline Removal:** Implemented `setComposingTextNoUnderline` to remove the distracting system underline during phonetic typing. Text commits instantly for a cleaner, native feel.
+- **Volume Key Cursor Control:** Use Volume Up/Down keys to move the cursor left/right precisely.
 
-## 🎨 Visual Refinements
-- **Unified Popup Styling:** The language switcher popup now uses a unified opacity (solid alpha) for all items.
-- **Clean Focus:** "Current" item uses normal font weight for a balanced, premium look.
-- **Correct Positioning:** The popup appears distinctly *above* the key, not covering it.
+### **Layout Enhancements**
+- **Increased Layout Limit:** Users can now select up to **4 active layouts** (previously 3).
+- **Aronno Default:** Added "Aronno" layout to the default set for new users.
 
-## 🚀 Code Optimization
-- **Zero-Lag Initialization:** Implemented pre-initialization on `ACTION_DOWN` to eliminate initial frame drops.
-- **Clean Codebase:** Removed redundant calculations and improved loop efficiency for buttery smooth 60fps animations.
+## 🧹 Maintenance & Cleanup
+### **Zero-XML Architecture Complete**
+- **Removed Legacy Artifacts:** Deleted all unused XML layout files (`keyboard_view.xml`, etc.) and legacy resources.
+- **Pure Canvas Engine:** The keyboard now relies entirely on the `AronnoCanvasView` engine, with no XML overhead for key rendering.
+- **Resource Optimization:** Cleaned up unused drawables while preserving essential Theme Preview resources.
+
+### **Bug Fixes**
+- **Lint Fixes:** Resolved unused parameter warnings in lifecycle methods.
+- **Build Integrity:** Verified build success after extensive cleanup.
 
 ## 📥 Download
-[Download AronnoKeyboard_v1.1.5.apk](app/release/AronnoKeyboard_v1.1.5.apk)
+[Download AronnoKeyboard_v1.1.6.apk](app/release/AronnoKeyboard_v1.1.6.apk)
