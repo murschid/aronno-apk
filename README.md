@@ -1,12 +1,20 @@
-# Aronno Keyboard - v1.1.10
+# Aronno Keyboard - v1.1.11
 
 **Release Date:** January 03, 2026
 
-## 🚀 What's New in v1.1.10?
+## 🚀 What's New in v1.1.11?
 
-# Version 1.1.10 - Native Bengali GIFs & Visual Polish
+# Version 1.1.11 - Layout Perfection & Bug Fixes
 
-## ✨ New Features
+## ⌨️ Layout Updates
+- **Aronno Layout**: Optimized for speed (Split-hand ergonomics). Removed duplicate keys. Added dedicated keys for vital characters.
+- **National Layout**: Added Bengali numbers and missing secondary characters.
+- **Probhat Layout**: Added missing 'Khanda-Ta' and Folas to popups.
+- **Bijoy Layout**: Verified completeness.
+
+## 🐛 Bug Fixes
+- **Select All**: Fixed backspace not deleting selected text.
+- **GIFs**: Fixed GIF loading issue in release builds.
 
 ### **Native Bengali GIF Integration**
 - **Localized Categories:** Added dedicated categories: "ট্রেন্ডিং" (Trending), "খুশি" (Happy), "দুঃখ" (Sad), "ভালোবাসা" (Love), "রাগ" (Angry), "ওয়াও" (Wow), and "মজার" (Funny).
@@ -26,4 +34,4 @@
 - **Clean Code:** Resolved all lint warnings and optimized resource usage (strings.xml).
 
 ## 📥 Download
-[Download AronnoKeyboard_v1.1.10.apk](app/release/AronnoKeyboard_v1.1.10.apk)
+[Download AronnoKeyboard_v1.1.11.apk](app/release/AronnoKeyboard_v1.1.11.apk)
