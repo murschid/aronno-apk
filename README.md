@@ -1,10 +1,10 @@
-# Aronno Keyboard - v1.1.7
+# Aronno Keyboard - v1.1.8
 
 **Release Date:** January 03, 2026
 
-## 🚀 What's New in v1.1.7?
+## 🚀 What's New in v1.1.8?
 
-# Version 1.1.7 - Native Bengali GIFs & Visual Polish
+# Version 1.1.8 - Native Bengali GIFs & Visual Polish
 
 ## ✨ New Features
 
@@ -26,4 +26,4 @@
 - **Clean Code:** Resolved all lint warnings and optimized resource usage (strings.xml).
 
 ## 📥 Download
-[Download AronnoKeyboard_v1.1.7.apk](app/release/AronnoKeyboard_v1.1.7.apk)
+[Download AronnoKeyboard_v1.1.8.apk](app/release/AronnoKeyboard_v1.1.8.apk)
