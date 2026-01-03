@@ -1,29 +1,29 @@
-# Aronno Keyboard - v1.1.6
+# Aronno Keyboard - v1.1.7
 
 **Release Date:** January 03, 2026
 
-## 🚀 What's New in v1.1.6?
+## 🚀 What's New in v1.1.7?
 
-# Version 1.1.6 - Phonetic Polish & Zero-XML
+# Version 1.1.7 - Native Bengali GIFs & Visual Polish
 
 ## ✨ New Features
-### **Visual Polish for Phonetic Input**
-- **Underline Removal:** Implemented `setComposingTextNoUnderline` to remove the distracting system underline during phonetic typing. Text commits instantly for a cleaner, native feel.
-- **Volume Key Cursor Control:** Use Volume Up/Down keys to move the cursor left/right precisely.
 
-### **Layout Enhancements**
-- **Increased Layout Limit:** Users can now select up to **4 active layouts** (previously 3).
-- **Aronno Default:** Added "Aronno" layout to the default set for new users.
+### **Native Bengali GIF Integration**
+- **Localized Categories:** Added dedicated categories: "ট্রেন্ডিং" (Trending), "খুশি" (Happy), "দুঃখ" (Sad), "ভালোবাসা" (Love), "রাগ" (Angry), "ওয়াও" (Wow), and "মজার" (Funny).
+- **Smart Localization:** Implemented explicit "Bengali" search prefixes (e.g., "Bengali Love", "Bangladesh") to guarantee culturally relevant content from the Tenor API foundation.
+- **Infinite Scroll:** Integrated seamless pagination (lazy loading) for endless GIF browsing.
 
-## 🧹 Maintenance & Cleanup
-### **Zero-XML Architecture Complete**
-- **Removed Legacy Artifacts:** Deleted all unused XML layout files (`keyboard_view.xml`, etc.) and legacy resources.
-- **Pure Canvas Engine:** The keyboard now relies entirely on the `AronnoCanvasView` engine, with no XML overhead for key rendering.
-- **Resource Optimization:** Cleaned up unused drawables while preserving essential Theme Preview resources.
+### **Visual & UX Polish**
+- **Unified Aesthetic:** GIF grid updated to 5 columns with 64dp height and 2dp margins, perfectly matching the Sticker UI for a cohesive look.
+- **New Icon:** Updated GIF tab icon to `gif_box` (Material Symbols, weight 300) for a modern, refined appearance.
+- **Auto-Loading:** Initial "Trending" category now loads instantly upon opening the tab.
 
-### **Bug Fixes**
-- **Lint Fixes:** Resolved unused parameter warnings in lifecycle methods.
-- **Build Integrity:** Verified build success after extensive cleanup.
+## 🛠 Stability & Performance
+
+### **System Improvements**
+- **Memory Management:** Implemented `onTrimMemory` and aggressive view recycling in `ProgrammaticGifAdapter` to ensure the keyboard remains lightweight and crash-free.
+- **Robust Error Handling:** Fixed JSON mapping issues ("No GIFs found") and added graceful error states for network failures.
+- **Clean Code:** Resolved all lint warnings and optimized resource usage (strings.xml).
 
 ## 📥 Download
-[Download AronnoKeyboard_v1.1.6.apk](app/release/AronnoKeyboard_v1.1.6.apk)
+[Download AronnoKeyboard_v1.1.7.apk](app/release/AronnoKeyboard_v1.1.7.apk)
