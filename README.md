@@ -1,28 +1,26 @@
-# Aronno Keyboard - v2.0.1
+# Aronno Keyboard - v2.0.3
 
 **Release Date:** January 04, 2026
 
-## 🚀 What's New in v2.0.1?
+## 🚀 What's New in v2.0.3?
 
-# Version 2.0.1 - Refactored Core, Performance & Stability
+# Version 2.0.3 - Crash Fixes & Smart Cursor
 
-## 🚀 Major Architecture Overhaul
-- **Refactored Codebase**: Complete restructuring of the project into `core`, `models`, `ui`, and `utils` packages for better maintainability and scalability.
-- **Modernized Imports**: Cleaned up legacy code and streamlined dependencies.
+## 🛡️ Stability & Crash Fixes
+- **Key Height Slider**: Fixed a critical crash ("crushing") when adjusting keyboard height. The slider is now fortified with deferred rendering and software-layer protection for a butter-smooth experience.
+- **Service Stability**: Resolved a background crash that occurred when the active keyboard service tried to reload while settings were being changed.
+- **Robustness**: Added multiple safety guards to prevent the app from crashing during rapid configuration changes.
 
-## ⚡ Performance Improvements
-- **Faster Suggestions**: Implemented a **Best-First Search (BFS)** algorithm with `maxSubtreeFrequency` pruning in the `SuggestionEngine`. This significantly reduces lookup time for predictions.
-- **Optimized Typing**: Replaced memory-heavy `substring` operations with `startsWith` in `AvroParser` to reduce Garbage Collection (GC) pauses during fast typing.
-- **Smart Debouncing**: Added a 2-second debounce to User Dictionary saving to prevent disk I/O lag while typing.
-- **Enhanced Caching**: Increased Phonetic Cache size (100 -> 500) for smoother transliteration.
+## ⬅️➡️ Smart Volume Cursor
+- **Native Cursor Control**: Volume keys now send **Arrow Key** (DPAD) events for reliable cursor movement in all apps. This also enables "press and hold" to scroll through text.
+- **Strict Availability**: The feature now works **ONLY when the keyboard is visible**.
+    - **Keyboard Open**: Volume Keys move cursor.
+    - **Keyboard Closed**: Volume Keys accept standard volume control (Media/Ringer).
+- **Default Behavior**: Enabled by default, with the smart safety check to prevent accidental volume changes.
 
-## 🐛 Critical Bug Fixes
-- **Store Page Crash**: Fixed a crash on the "Store" page caused by an invalid `ThemeIconView` class path.
-- **Service Robustness**: Added safety guards (`try-catch`) to `K_THEME` and `K_SETTINGS` to prevent crashes if external activities fail to launch.
-
-## 🎨 Visual & APK Optimization
-- **New Icon**: Updated the App Icon to a premium **3D Green/Gold** design with a transparent adaptive background.
-- **Stickers**: Organized and renamed sticker resources for better consistency.
+## 🌍 Localization & Polish
+- **Bengali Previews**: The Key Height settings preview now correctly displays Bengali text when applicable.
+- **Code Hygiene**: Standardized internal logic for better maintainability.
 
 ## 📥 Download
-[Download AronnoKeyboard_v2.0.1.apk](app/release/AronnoKeyboard_v2.0.1.apk)
+[Download AronnoKeyboard_v2.0.3.apk](app/release/AronnoKeyboard_v2.0.3.apk)
