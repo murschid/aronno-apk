@@ -1,10 +1,10 @@
-# Aronno Keyboard - v2.0.0
+# Aronno Keyboard - v2.0.1
 
 **Release Date:** January 04, 2026
 
-## 🚀 What's New in v2.0.0?
+## 🚀 What's New in v2.0.1?
 
-# Version 2.0.0 - Refactored Core, Performance & Stability
+# Version 2.0.1 - Refactored Core, Performance & Stability
 
 ## 🚀 Major Architecture Overhaul
 - **Refactored Codebase**: Complete restructuring of the project into `core`, `models`, `ui`, and `utils` packages for better maintainability and scalability.
@@ -21,9 +21,8 @@
 - **Service Robustness**: Added safety guards (`try-catch`) to `K_THEME` and `K_SETTINGS` to prevent crashes if external activities fail to launch.
 
 ## 🎨 Visual & APK Optimization
-- **Optimization**: Reduced APK size to **3.8 MB** (from 4.4 MB) by converting app icons and assets to WebP.
 - **New Icon**: Updated the App Icon to a premium **3D Green/Gold** design with a transparent adaptive background.
 - **Stickers**: Organized and renamed sticker resources for better consistency.
 
 ## 📥 Download
-[Download AronnoKeyboard_v2.0.0.apk](app/release/AronnoKeyboard_v2.0.0.apk)
+[Download AronnoKeyboard_v2.0.1.apk](app/release/AronnoKeyboard_v2.0.1.apk)
