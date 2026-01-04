@@ -1,37 +1,29 @@
-# Aronno Keyboard - v1.1.11
+# Aronno Keyboard - v2.0.0
 
-**Release Date:** January 03, 2026
+**Release Date:** January 04, 2026
 
-## 🚀 What's New in v1.1.11?
+## 🚀 What's New in v2.0.0?
 
-# Version 1.1.11 - Layout Perfection & Bug Fixes
+# Version 2.0.0 - Refactored Core, Performance & Stability
 
-## ⌨️ Layout Updates
-- **Aronno Layout**: Optimized for speed (Split-hand ergonomics). Removed duplicate keys. Added dedicated keys for vital characters.
-- **National Layout**: Added Bengali numbers and missing secondary characters.
-- **Probhat Layout**: Added missing 'Khanda-Ta' and Folas to popups.
-- **Bijoy Layout**: Verified completeness.
+## 🚀 Major Architecture Overhaul
+- **Refactored Codebase**: Complete restructuring of the project into `core`, `models`, `ui`, and `utils` packages for better maintainability and scalability.
+- **Modernized Imports**: Cleaned up legacy code and streamlined dependencies.
 
-## 🐛 Bug Fixes
-- **Select All**: Fixed backspace not deleting selected text.
-- **GIFs**: Fixed GIF loading issue in release builds.
+## ⚡ Performance Improvements
+- **Faster Suggestions**: Implemented a **Best-First Search (BFS)** algorithm with `maxSubtreeFrequency` pruning in the `SuggestionEngine`. This significantly reduces lookup time for predictions.
+- **Optimized Typing**: Replaced memory-heavy `substring` operations with `startsWith` in `AvroParser` to reduce Garbage Collection (GC) pauses during fast typing.
+- **Smart Debouncing**: Added a 2-second debounce to User Dictionary saving to prevent disk I/O lag while typing.
+- **Enhanced Caching**: Increased Phonetic Cache size (100 -> 500) for smoother transliteration.
 
-### **Native Bengali GIF Integration**
-- **Localized Categories:** Added dedicated categories: "ট্রেন্ডিং" (Trending), "খুশি" (Happy), "দুঃখ" (Sad), "ভালোবাসা" (Love), "রাগ" (Angry), "ওয়াও" (Wow), and "মজার" (Funny).
-- **Smart Localization:** Implemented explicit "Bengali" search prefixes (e.g., "Bengali Love", "Bangladesh") to guarantee culturally relevant content from the Tenor API foundation.
-- **Infinite Scroll:** Integrated seamless pagination (lazy loading) for endless GIF browsing.
+## 🐛 Critical Bug Fixes
+- **Store Page Crash**: Fixed a crash on the "Store" page caused by an invalid `ThemeIconView` class path.
+- **Service Robustness**: Added safety guards (`try-catch`) to `K_THEME` and `K_SETTINGS` to prevent crashes if external activities fail to launch.
 
-### **Visual & UX Polish**
-- **Unified Aesthetic:** GIF grid updated to 5 columns with 64dp height and 2dp margins, perfectly matching the Sticker UI for a cohesive look.
-- **New Icon:** Updated GIF tab icon to `gif_box` (Material Symbols, weight 300) for a modern, refined appearance.
-- **Auto-Loading:** Initial "Trending" category now loads instantly upon opening the tab.
-
-## 🛠 Stability & Performance
-
-### **System Improvements**
-- **Memory Management:** Implemented `onTrimMemory` and aggressive view recycling in `ProgrammaticGifAdapter` to ensure the keyboard remains lightweight and crash-free.
-- **Robust Error Handling:** Fixed JSON mapping issues ("No GIFs found") and added graceful error states for network failures.
-- **Clean Code:** Resolved all lint warnings and optimized resource usage (strings.xml).
+## 🎨 Visual & APK Optimization
+- **Optimization**: Reduced APK size to **3.8 MB** (from 4.4 MB) by converting app icons and assets to WebP.
+- **New Icon**: Updated the App Icon to a premium **3D Green/Gold** design with a transparent adaptive background.
+- **Stickers**: Organized and renamed sticker resources for better consistency.
 
 ## 📥 Download
-[Download AronnoKeyboard_v1.1.11.apk](app/release/AronnoKeyboard_v1.1.11.apk)
+[Download AronnoKeyboard_v2.0.0.apk](app/release/AronnoKeyboard_v2.0.0.apk)
