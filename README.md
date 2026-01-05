@@ -1,10 +1,10 @@
-# Aronno Keyboard - v2.0.3
+# Aronno Keyboard - v2.0.4
 
-**Release Date:** January 04, 2026
+**Release Date:** January 05, 2026
 
-## 🚀 What's New in v2.0.3?
+## 🚀 What's New in v2.0.4?
 
-# Version 2.0.3 - Crash Fixes & Smart Cursor
+# Version 2.0.4 - Crash Fixes & Smart Cursor
 
 ## 🛡️ Stability & Crash Fixes
 - **Key Height Slider**: Fixed a critical crash ("crushing") when adjusting keyboard height. The slider is now fortified with deferred rendering and software-layer protection for a butter-smooth experience.
@@ -23,4 +23,4 @@
 - **Code Hygiene**: Standardized internal logic for better maintainability.
 
 ## 📥 Download
-[Download AronnoKeyboard_v2.0.3.apk](app/release/AronnoKeyboard_v2.0.3.apk)
+[Download AronnoKeyboard_v2.0.4.apk](app/release/AronnoKeyboard_v2.0.4.apk)
