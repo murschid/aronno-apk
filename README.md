@@ -1,10 +1,10 @@
-# Aronno Keyboard - v2.0.5
+# Aronno Keyboard - v2.0.6
 
 **Release Date:** January 06, 2026
 
-## 🚀 What's New in v2.0.5?
+## 🚀 What's New in v2.0.6?
 
-# Version 2.0.5 - Audio Polish & Smarter Caps
+# Version 2.0.6 - Audio Polish & Smarter Caps
 
 ## 🔊 Audio & Feedback
 
@@ -26,4 +26,4 @@
 - **Cleaner Home**: Removed the redundant "Type here to test" text field from the Main Menu for a more modern, streamlined look.
 
 ## 📥 Download
-[Download AronnoKeyboard_v2.0.5.apk](app/release/AronnoKeyboard_v2.0.5.apk)
+[Download AronnoKeyboard_v2.0.6.apk](app/release/AronnoKeyboard_v2.0.6.apk)
