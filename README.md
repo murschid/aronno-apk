@@ -1,26 +1,29 @@
-# Aronno Keyboard - v2.0.4
+# Aronno Keyboard - v2.0.5
 
-**Release Date:** January 05, 2026
+**Release Date:** January 06, 2026
 
-## 🚀 What's New in v2.0.4?
+## 🚀 What's New in v2.0.5?
 
-# Version 2.0.4 - Crash Fixes & Smart Cursor
+# Version 2.0.5 - Audio Polish & Smarter Caps
 
-## 🛡️ Stability & Crash Fixes
-- **Key Height Slider**: Fixed a critical crash ("crushing") when adjusting keyboard height. The slider is now fortified with deferred rendering and software-layer protection for a butter-smooth experience.
-- **Service Stability**: Resolved a background crash that occurred when the active keyboard service tried to reload while settings were being changed.
-- **Robustness**: Added multiple safety guards to prevent the app from crashing during rapid configuration changes.
+## 🔊 Audio & Feedback
 
-## ⬅️➡️ Smart Volume Cursor
-- **Native Cursor Control**: Volume keys now send **Arrow Key** (DPAD) events for reliable cursor movement in all apps. This also enables "press and hold" to scroll through text.
-- **Strict Availability**: The feature now works **ONLY when the keyboard is visible**.
-    - **Keyboard Open**: Volume Keys move cursor.
-    - **Keyboard Closed**: Volume Keys accept standard volume control (Media/Ringer).
-- **Default Behavior**: Enabled by default, with the smart safety check to prevent accidental volume changes.
+- **Keypress Sounds**: Fixed an issue where keypress sounds were inaudible if system "Touch sounds" were disabled. Use app settings to control sounds independently with consistent 50% volume coverage.
+- **Sound Profile**: Reverted to the classic `Standard` keyboard sound effect for a more familiar typing experience.
 
-## 🌍 Localization & Polish
-- **Bengali Previews**: The Key Height settings preview now correctly displays Bengali text when applicable.
-- **Code Hygiene**: Standardized internal logic for better maintainability.
+## ✨ Intelligent Auto-Caps
+
+- **Universal Support**: Significantly improved auto-capitalization detection. The keyboard now analyzes application "flags" to ensure Shift starts ON in apps like **Facebook Messenger**, even when the app provides inconsistent timing.
+- **Visual Accuracy**: Ensured the Shift key icon and letter keys perfectly reflect the capitalization state the moment the keyboard opens.
+
+## 🛡️ Superior Stability
+
+- **Startup Protection**: Added advanced safety guards to prevent crashes during the critical "startup" phase when switching keyboards or opening apps rapidly.
+- **Code Hygiene**: Refactored internal logic using idiomatic Kotlin (KTX) for better performance and fewer background warnings.
+
+## 🎨 UI Polish
+
+- **Cleaner Home**: Removed the redundant "Type here to test" text field from the Main Menu for a more modern, streamlined look.
 
 ## 📥 Download
-[Download AronnoKeyboard_v2.0.4.apk](app/release/AronnoKeyboard_v2.0.4.apk)
+[Download AronnoKeyboard_v2.0.5.apk](app/release/AronnoKeyboard_v2.0.5.apk)
