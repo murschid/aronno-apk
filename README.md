@@ -1,29 +1,21 @@
-# Aronno Keyboard - v2.0.6
+# Aronno Keyboard - v2.0.7
 
-**Release Date:** January 06, 2026
+**Release Date:** January 09, 2026
 
-## 🚀 What's New in v2.0.6?
+## 🚀 What's New in v2.0.7?
 
-# Version 2.0.6 - Audio Polish & Smarter Caps
+# Version 2.0.7 - Critical Fixes & Performance
 
-## 🔊 Audio & Feedback
+## � Critical Bug Fixes
 
-- **Keypress Sounds**: Fixed an issue where keypress sounds were inaudible if system "Touch sounds" were disabled. Use app settings to control sounds independently with consistent 50% volume coverage.
-- **Sound Profile**: Reverted to the classic `Standard` keyboard sound effect for a more familiar typing experience.
+- **Popup Visibility**: Fixed a rendering issue where long-press popups on the first row of keys were hidden behind the toolbar. Popups now overlay correctly for all keys.
+- **Spacebar Logic**: Resolved a major issue where pressing Space in **National** and **Bijoy** layouts would incorrectly "auto-correct" the word, deleting the last character. Typing is now strictly WYSIWYG (What You See Is What You Get) for all Bengali modes.
 
-## ✨ Intelligent Auto-Caps
+## ⚡ Performance & Feel
 
-- **Universal Support**: Significantly improved auto-capitalization detection. The keyboard now analyzes application "flags" to ensure Shift starts ON in apps like **Facebook Messenger**, even when the app provides inconsistent timing.
-- **Visual Accuracy**: Ensured the Shift key icon and letter keys perfectly reflect the capitalization state the moment the keyboard opens.
-
-## 🛡️ Superior Stability
-
-- **Startup Protection**: Added advanced safety guards to prevent crashes during the critical "startup" phase when switching keyboards or opening apps rapidly.
-- **Code Hygiene**: Refactored internal logic using idiomatic Kotlin (KTX) for better performance and fewer background warnings.
-
-## 🎨 UI Polish
-
-- **Cleaner Home**: Removed the redundant "Type here to test" text field from the Main Menu for a more modern, streamlined look.
+- **Faster Typing**: Implemented batched input operations to significantly reduce system overhead (latency) while typing.
+- **Swipe Responsiveness**: Tuned the Spacebar swipe threshold (reduced from 80px to 60px) for snappier layout switching.
+- **Code Health**: Cleaned up internal regex patterns and resolved lint warnings for better stability.
 
 ## 📥 Download
-[Download AronnoKeyboard_v2.0.6.apk](app/release/AronnoKeyboard_v2.0.6.apk)
+[Download AronnoKeyboard_v2.0.7.apk](app/release/AronnoKeyboard_v2.0.7.apk)
