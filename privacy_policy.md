@@ -1,3 +1,6 @@
+---
+permalink: /privacy_policy
+---
 # Privacy Policy for Aronno Keyboard
 
 **Last Updated: February 20, 2026**
